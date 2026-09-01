@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <main class="container">
+        <div id="Start_screen" class="screen active">
+            <h1>Welcome </h1>
+            <p>Test your knowledge with these fun questions about space!</p>
+            <button id="start_btn" class="btn">Start</button>
+        </div>
+
+        <div id="Quiz_screen" class="screen">
+            <div class="quiz_header">
+                    <h2 id="question_txt">Question</h2>
+                    
+               
+                
+                <div class="quiz_info">
+                    <p>Question <span id="currentQuestionSpan">0</span> out of <span id="totalQuestionsSpan">0</span></p>
+                    <p>Score <span id="score">0</span></p>
+                </div>
+                
+            </div>
+
+            <div class="answersContainer" id="answersContainer">
+
+            </div>
+            <div class="progressBar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <div id="Res_screen" class="screen">
+            <h1>Congrats You finished</h1>
+            <div class="results">
+                <p >Your final score is : <span id="ResultP"> 0 </span> </p>
+            </div>
+            <button class="btn" id="restart_btn">Restart</button>
+        </div>
+    </main>
+</body>
+
+<script src="quiz.js"></script>
+</html>

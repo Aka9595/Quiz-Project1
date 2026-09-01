@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+
+    border: 2px solid red;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px red;
+    line-height: 50px;
+    transition: 0.4s ease-in-out;
+}
+
+.container:hover{
+    transform: scale(1.03);
+    background-color: rgb(31, 31, 31);
+
+}
+
+.screen{
+    display: none;
+    text-align: center;
+}
+
+.screen.active{
+    display: block;
+}
+
+#Start_screen h1{
+
+
+}
+
+.quiz_info{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.btn{
+    padding: 3px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: aliceblue;
+    
+}
+
+.answersContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.answer-btn{
+    background-color: #f8f0e5;
+    color: #333;
+    border: 2px solid #eadbc8;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    text-align: left;
+
+    height: 50px;
+
+    transition: 0.4s ease;
+}
+
+.answer-btn:hover{
+    transform: scale(1.03);
+}
+
+.progressBar{
+
+    margin-top: 20px;
+    background-color: rgb(250, 137, 137);
+    border: red;
+
+    border-radius: 40px;
+
+    height: 10px;
+
+}
+
+.progress{
+
+    background-color: red;
+    height: 100%;
+    border-radius: 40px;
+
+    width: 0%;
+    transition: width 0.4s ease-in;
+}
+
+/*correct or incorrect*/
+
+.correct{
+    background-color: rgb(142, 255, 142);
+    border: 2px solid green;
+    
+}
+.incorrect{
+    background-color: rgb(255, 142, 142);
+    border: 2px solid red;
+
+}
+
+@media (max-width : 500px) {
+    #start_screen{
+
+    }
+
+    #question_txt{
+        font-size: 14px;
+    }
+    .quiz_info{
+        font-size: 10px;
+    }
+}
