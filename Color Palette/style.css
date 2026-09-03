@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Margarine&family=Pinyon+Script&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(135deg , #313149, #8770d1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Roboto",monospace;
+    padding: 20px;
+}
+
+.container{ 
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 5px 5px rgb(0,0,0,0.5)
+
+}
+
+h1{
+    text-decoration: solid ;
+    
+    position: relative;
+
+    padding-bottom: 0.5rem;
+}
+
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 3px;
+    background-color: #667eea;
+    border-radius: 2px;
+}
+
+.palette_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,1fr));
+    gap: 10px;
+    margin: 20px 0px 20px;
+}
+
+#generateBtn{
+    border: 2px solid #6d5ba6;
+    border-radius: 999px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: linear-gradient(135deg , #8770d1, #313149);
+    color: white;
+    opacity: 50%;
+    transition: all 0.35s ease-in-out;
+
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#generateBtn:hover{
+    opacity: 100%;
+    background-color: #1a1b2e;
+    transform: scale(1.03);
+    transform: translateY(-3px);
+}
+
+#generateBtn:active{
+    transform: translateY(0);
+}
+
+.color_card{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.1);
+
+}
+
+.color{
+    height: 120px;
+    cursor: pointer;
+}
+
+.color_info{
+    background-color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.hex_value{
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.copy_btn{
+    cursor: pointer;
+    color: #667eea;
+    transition: color 0.2s;
+}
+
+.copy_btn:hover{
+    color: #5266be;
+}
+
+@media (max-screen:768px) {
+    
+    .palette_container {
+        grid-template-columns: repeat(auto-fit,minmax(100,1fr));
+    }
+}

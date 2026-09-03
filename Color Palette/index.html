@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+</head>
+<body>
+    
+    <main class="container">
+
+        <h1>Color Palette Generator</h1>
+
+        <div class="palette_container">
+            <!--COLORS-->
+
+            <div class="color_card">
+                
+                <div class="color" 
+                style="background-color: #f0f8ff;"></div>
+
+                <div class="color_info">
+                    <span class="hex_value">#f0f8ff</span>
+                    <i class="far fa-copy copy_btn" title="Copy to clipboard"></i>
+                </div>
+
+            </div>
+            <div class="color_card">
+
+                <div class="color" 
+                style="background-color: #b5ffe6;"></div>
+
+                <div class="color_info">
+                    <span class="hex_value">#b5ffe6</span>
+                    <i class="far fa-copy copy_btn" title="Copy to clipboard"></i>
+                </div>
+
+            </div>
+            <div class="color_card">
+
+                <div class="color" 
+                style="background-color: #f5ffb2;"></div>
+
+                <div class="color_info">
+                    <span class="hex_value">#f5ffb2</span>
+                    <i class="far fa-copy copy_btn" title="Copy to clipboard"></i>
+                </div>
+
+            </div>
+            <div class="color_card" id="colorCard">
+
+                <div class="color" 
+                style="background-color: #d4afff;"></div>
+
+                <div class="color_info">
+                    <span class="hex_value">#d4afff</span>
+                    <i class="far fa-copy copy_btn" title="Copy to clipboard"></i>
+                </div>
+
+            </div>
+            <div class="color_card">
+
+                <div class="color" 
+                style="background-color: #ffd3ac;"></div>
+
+                <div class="color_info">
+                    <span class="hex_value">#ffd3ac</span>
+                    <i class="far fa-copy copy_btn" title="Copy to clipboard"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <button id="generateBtn">
+            <i class="fas fa-sync-alt"></i>
+            Generate Palette
+        </button>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
